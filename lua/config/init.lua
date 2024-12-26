@@ -43,6 +43,12 @@ autocmd("BufWritePost", {
 	end,
 })
 
+autocmd("BufWritePre", {
+  callback = function()
+    require("conform").format()
+  end,
+})
+
 -- autocmd('BufEnter', {
 -- 	callback = function()
 -- 		if vim.bo.filetype == "zig" then
