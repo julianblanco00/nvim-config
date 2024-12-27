@@ -15,12 +15,15 @@ return {
 					no_ignore = true
 				}
 			},
-			defaults = { 
-				file_ignore_patterns = { 
-				  "node_modules",
-					".git"
+			defaults = {
+				file_ignore_patterns = {
+					"node_modules",
+					".git",
+					"dist",
+					"build",
+					"package-lock.json"
 				}
-			  }
+			}
 		})
 
         local builtin = require('telescope.builtin')

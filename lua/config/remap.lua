@@ -20,7 +20,7 @@ vim.keymap.set('n', '0', '^', defaults)
 
 vim.keymap.set('n', 'yp', '<S-v>$%y', defaults)
 
-vim.keymap.set("n", "<leader>e", "<cmd>:NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>e", "<cmd>:Neotree toggle<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
