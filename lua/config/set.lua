@@ -17,4 +17,4 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.scroll = 5
 
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard", "unnamedplus")
