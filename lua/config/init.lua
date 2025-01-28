@@ -43,14 +43,14 @@ autocmd("TextYankPost", {
 autocmd("BufReadPost", {
 	pattern = "*",
 	callback = function()
-		vim.cmd("set scroll=5")
+		vim.cmd("set scroll=10")
 	end,
 })
 
 autocmd("BufWritePost", {
 	pattern = "*",
 	callback = function()
-		vim.cmd("set scroll=5")
+		vim.cmd("set scroll=10")
 	end,
 })
 

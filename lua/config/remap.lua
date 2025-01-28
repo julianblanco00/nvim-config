@@ -13,8 +13,8 @@ vim.keymap.set({ "n", "v" }, "<leader>p", '"_dP<Esc>', defaults)
 vim.keymap.set("n", "{", "<C-d>", defaults)
 vim.keymap.set("n", "}", "<C-u>", defaults)
 
-vim.keymap.set("n", "<C-e>", "5<C-e>", defaults)
-vim.keymap.set("n", "<C-y>", "5<C-y>", defaults)
+vim.keymap.set("n", "<C-e>", "10<C-e>", defaults)
+vim.keymap.set("n", "<C-y>", "10<C-y>", defaults)
 
 vim.keymap.set("n", "0", "^", defaults)
 

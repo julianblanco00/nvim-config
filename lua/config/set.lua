@@ -15,6 +15,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.scroll = 5
+vim.opt.scroll = 10
 
 vim.api.nvim_set_option("clipboard", "unnamedplus")
