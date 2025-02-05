@@ -44,6 +44,7 @@ autocmd("BufReadPost", {
 	pattern = "*",
 	callback = function()
 		vim.cmd("set scroll=10")
+		vim.cmd("TailwindConcealEnable")
 	end,
 })
 
@@ -57,6 +58,7 @@ autocmd("BufWritePost", {
 autocmd("BufWritePre", {
 	callback = function()
 		require("conform").format()
+		vim.cmd("TailwindSort")
 	end,
 })
 
