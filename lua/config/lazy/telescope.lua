@@ -40,5 +40,6 @@ return {
 		vim.keymap.set("n", "<leader>sg", builtin.live_grep, {})
 		vim.keymap.set("n", "<leader>sl", builtin.resume, {})
 		vim.keymap.set("n", "<leader>,", builtin.buffers, {})
+		vim.keymap.set("n", "<leader>sw", builtin.grep_string, { noremap = true, silent = true })
 	end,
 }

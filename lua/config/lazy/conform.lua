@@ -17,6 +17,7 @@ return {
 					javascriptreact = { "prettier" },
 					typescriptreact = { "prettier" },
 					typescript = { "prettier" },
+					cpp = { "clang-format" },
 				},
 				formatters = {
 					injected = { options = { ignore_errors = true } },
@@ -37,6 +38,6 @@ return {
 				},
 			}
 			return opts
-		end
-	}
+		end,
+	},
 }
