@@ -30,3 +30,11 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 
 vim.keymap.set("n", "<C-h>", "<C-w><Left>", defaults)
 vim.keymap.set("n", "<C-l>", "<C-w><Right>", defaults)
+
+-- floating terminal
+vim.keymap.set("n", "<C-/>", function()
+	Snacks.terminal()
+end, { desc = "Terminal (cwd)" })
+
+-- Terminal Mappings
+vim.keymap.set("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
