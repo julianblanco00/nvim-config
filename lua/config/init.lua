@@ -44,6 +44,7 @@ autocmd("BufReadPost", {
 	pattern = "*",
 	callback = function()
 		vim.cmd("set scroll=10")
+		vim.cmd("set ic")
 	end,
 })
 
@@ -62,15 +63,15 @@ autocmd("BufWritePost", {
 })
 
 autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function()
-    local bufname = vim.api.nvim_buf_get_name(0)
-    if bufname:match("%.cpp$") or bufname:match("%.hpp$") or bufname:match("%.c$") or bufname:match("%.h$") then
-      vim.cmd("silent! %!clang-format --style=file")
-    else
-      require("conform").format()
-    end
-  end,
+	pattern = "*",
+	callback = function()
+		local bufname = vim.api.nvim_buf_get_name(0)
+		if bufname:match("%.cpp$") or bufname:match("%.hpp$") or bufname:match("%.c$") or bufname:match("%.h$") then
+			vim.cmd("silent! %!clang-format --style=file")
+		else
+			require("conform").format()
+		end
+	end,
 })
 
 -- autocmd("BufWritePre", {
@@ -79,7 +80,6 @@ autocmd("BufWritePre", {
 --     vim.cmd("silent! %!clang-format --style=file")
 --   end,
 -- })
-
 
 -- autocmd("BufWritePre", {
 -- 	pattern = { "*.jsx", "*.tsx" },
